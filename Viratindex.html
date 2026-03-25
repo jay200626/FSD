@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Virat Kohli — Achievements</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f1a;
+      --card: #121829;
+      --text: #e6e9f2;
+      --muted: #a9b1c7;
+      --accent: #ff6b3d;
+      --accent-2: #3dd6ff;
+      --border: #1f2740;
+      --success: #2ecc71;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: radial-gradient(1200px 600px at 20% 0%, #0f1424 0%, #0b0f1a 60%), var(--bg); color: var(--text); font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+    a { color: var(--accent-2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Layout */
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 28px 20px 60px; }
+    header {
+      display: grid; grid-template-columns: 80px 1fr auto; gap: 18px; align-items: center; margin-bottom: 24px;
+    }
+    .avatar {
+      width: 80px; height: 80px; border-radius: 16px; background: linear-gradient(135deg, #ff6b3d 0%, #ff9f1a 50%, #ffd166 100%);
+      display: grid; place-items: center; color: #0b0f1a; font-weight: 800; font-size: 28px; box-shadow: 0 8px 24px rgba(255, 107, 61, 0.35);
+    }
+    .title h1 { margin: 0; font-size: 28px; letter-spacing: 0.2px; }
+    .title p { margin: 6px 0 0; color: var(--muted); font-size: 14px; }
+    .cta { display: flex; gap: 10px; }
+    .btn {
+      padding: 10px 14px; border-radius: 10px; border: 1px solid var(--border); background: #0e1426; color: var(--text); font-weight: 600; cursor: pointer;
+    }
+    .btn.primary { background: linear-gradient(135deg, #ff6b3d, #ff9f1a); color: #0b0f1a; border: none; }
+    .btn:hover { filter: brightness(1.05); }
+
+    /* Hero */
+    .hero {
+      border: 1px solid var(--border); border-radius: 16px; background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      padding: 22px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 18px; align-items: center;
+    }
+    .hero h2 { margin: 0 0 8px; font-size: 24px; }
+    .hero p { margin: 0; color: var(--muted); }
+    .hero .statbar {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 16px;
+    }
+    .stat {
+      background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 12px;
+    }
+    .stat .label { color: var(--muted); font-size: 12px; }
+    .stat .value { font-size: 18px; font-weight: 800; margin-top: 4px; }
+
+    /* Sections */
+    .section { margin-top: 26px; }
+    .section h3 { margin: 0 0 12px; font-size: 20px; }
+    .grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+    }
+    .card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 14px;
+    }
+    .card h4 { margin: 0 0 8px; font-size: 16px; }
+    .card p { margin: 0; color: var(--muted); font-size: 14px; }
+    .badge {
+      display: inline-block; padding: 6px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; letter-spacing: 0.2px;
+      background: #0e1426; border: 1px solid var(--border); color: var(--accent-2);
+    }
+
+    /* Timeline */
+    .timeline { border-left: 2px solid var(--border); margin-left: 8px; padding-left: 16px; }
+    .event { margin: 14px 0; }
+    .event .when { font-size: 12px; color: var(--muted); }
+    .event .what { font-weight: 700; margin-top: 4px; }
+
+    /* Footer */
+    footer { margin-top: 30px; color: var(--muted); font-size: 13px; }
+    .sources { margin-top: 10px; font-size: 12px; }
+    .sources a { color: var(--muted); }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      header { grid-template-columns: 60px 1fr; }
+      .cta { grid-column: 1 / -1; margin-top: 8px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+  <img src="https://i.pinimg.com/736x/de/8e/ea/de8eea6f67a5fc92996ff6d48b3bd690.jpg" 
+       alt="Virat Kohli" 
+       class="avatar" 
+       style="width:80px; height:80px; border-radius:16px;"/>
+  <div class="title">
+    <h1>Virat Kohli — Achievements</h1>
+    <p>Relentless consistency across formats, chases, and big tournaments.</p>
+  </div>
+</header>
+
+
+    <section class="hero">
+      <div>
+        <h2>The modern batting standard</h2>
+        <p>From ODI dominance to clutch chases, Kohli’s numbers tell a decade-long story of craft and control.</p>
+        <div class="statbar">
+          <div class="stat">
+            <div class="label">ODI runs</div>
+            <div class="value">14,673</div>
+          </div>
+          <div class="stat">
+            <div class="label">ODI avg</div>
+            <div class="value">58.45</div>
+          </div>
+          <div class="stat">
+            <div class="label">PoS (ODI)</div>
+            <div class="value">12</div>
+          </div>
+          <div class="stat">
+            <div class="label">ICC ODI rating</div>
+            <div class="value">890</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h4>Signature records</h4>
+        <p><span class="badge">ODI</span> Most hundreds vs one team — 10</p>
+        <p><span class="badge">ODI</span> 2nd-most career runs — 14,673</p>
+        <p><span class="badge">ODI</span> 2nd-most player-of-the-series — 12</p>
+        <p><span class="badge">Career</span> Highest ICC ODI rating by an Indian — 890</p>
+      </div>
+    </section>
+
+    <section class="section" id="records">
+      <h3>Records across formats</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>ODI milestones</h4>
+          <p>Second-most career runs, elite average, and unmatched consistency in chases.</p>
+        </div>
+        <div class="card">
+          <h4>Test benchmarks</h4>
+          <p>Fastest to milestones, hundreds in each innings, and high-impact partnerships.</p>
+        </div>
+        <div class="card">
+          <h4>T20I & IPL impact</h4>
+          <p>Clutch performances in ICC events and sustained excellence in franchise cricket.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="awards">
+      <h3>Career highlights & awards</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>Player of the series</h4>
+          <p>ODIs: 12—reflecting tournament-long dominance.</p>
+        </div>
+        <div class="card">
+          <h4>ICC rankings</h4>
+          <p>Peak ODI rating: 890—the highest by an Indian batter.</p>
+        </div>
+        <div class="card">
+          <h4>Format transitions</h4>
+          <p>T20I retirement after 2024 title; Test retirement announced in 2025.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Career timeline</h3>
+      <div class="timeline">
+        <div class="event">
+          <div class="when">2008</div>
+          <div class="what">International debut—beginning of a relentless era.</div>
+        </div>
+        <div class="event">
+          <div class="when">2010s</div>
+          <div class="what">ODI dominance—chases, hundreds, and series awards.</div>
+        </div>
+        <div class="event">
+          <div class="when">2024</div>
+          <div class="what">T20 World Cup triumph—announces T20I retirement.</div>
+        </div>
+        <div class="event">
+          <div class="when">2025</div>
+          <div class="what">Test retirement announced—legacy sealed across formats.</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>Built with clarity—numbers, context, and the story they tell.</div>
+      <div class="sources">
+        Sources:
+        <a href="#" onclick="openSrc('1')">Cricket Tiger</a> ·
+        <a href="#" onclick="openSrc('2')">ESPNcricinfo</a> ·
+        <a href="#" onclick="openSrc('3')">Times of Sports</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function scrollToId(id) {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    function openSrc(idx) {
+      const map = {
+        '1': 'https://crickettiger.com/virat-kohli-records-complete-list/',
+        '2': 'https://www.espncricinfo.com/cricketers/virat-kohli-253802/tests-odi-t20-records',
+        '3': 'https://www.timesofsports.com/cricket/featured/virat-kohli-records-awards-list/'
+      };
+      window.open(map[idx], '_blank');
+    }
+  </script>
+</body>
+</html>
